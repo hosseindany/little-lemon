@@ -1,3 +1,58 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/karla/v23/qkBIXvYC6trAT55ZBi1ueQVIjQTD-JqaHUlKd7c.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/karla/v23/qkBIXvYC6trAT55ZBi1ueQVIjQTD-JqaE0lK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* arabic */
+@font-face {
+  font-family: 'Markazi Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/markazitext/v22/sykh-ydym6AtQaiEtX7yhqb_rV1k_81ZVYYZtfSQf4EvBNkm.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Markazi Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/markazitext/v22/sykh-ydym6AtQaiEtX7yhqb_rV1k_81ZVYYZtfSQf4svBNkm.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Markazi Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/markazitext/v22/sykh-ydym6AtQaiEtX7yhqb_rV1k_81ZVYYZtfSQf4ovBNkm.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Markazi Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/markazitext/v22/sykh-ydym6AtQaiEtX7yhqb_rV1k_81ZVYYZtfSQf4QvBA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+p {
+  margin: 5px;
+}
+#root{
+  width: 100vw;
+  min-width: max-content;
+}
 .App {
   text-align: center;
 }
@@ -5,6 +60,302 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.container {
+  width: 900px;
+  margin: auto;
+}
+nav ul{
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul a {
+  text-decoration: none;
+  font-family: Karla;
+}
+header {
+  display: flex;
+}
+
+.logo {
+  flex: 30%;
+  margin-top:7px;
+}
+nav{flex:70%}
+#hero , #chicago{
+  display: flex;
+  justify-content: space-between;
+}
+#chicago{
+  padding: 50px 0;
+  flex-wrap: wrap;
+}
+#chicago>div{
+  flex: 1;
+}
+.btn {cursor: pointer;}
+#hero {
+  position: relative;
+}
+.back-icon{    left: -49px;
+  position: absolute;
+  top: 56px;
+}
+#hero div:first-child {
+  flex: 2 1 175px;
+}
+#hero div:nth-child(2) {
+  flex: 1 1 175px;
+  position: relative;
+}
+#hero.no-img div:nth-child(2) {
+  flex:0;
+}
+.booking #hero{
+  margin-left: 64px;
+}
+#hero img {
+  width:100%;
+}
+.hero-image {
+  height: 300px;
+  right: 0;
+  top: 60px;
+  position: absolute;
+  overflow: hidden;
+  max-width: 250px;
+  border-radius: 15px
+}
+.chicago-image{
+  position: relative;
+}
+.chicago-image img{
+  height: 190px;
+  position: absolute;
+  margin-top: 50px;
+}
+.chicago-image img:nth-child(1){
+right: 0;
+}
+.chicago-image img:nth-child(2){
+  top:70px;
+  right: 60px;
+}
+.lead {
+  font-family: 'Karla';
+  font-size: 18px;
+}
+button.primary{
+  font-family: 'Karla';
+  font-size: 18px;
+  color: black;
+  background-color: #F4CE14;
+  border: none;
+  border-radius: 15px;
+  padding:10px 15px;
+  font-weight: bold;
+}
+h1, h2 {
+  font-family: 'markazi text';
+  font-weight: normal;
+}
+h1{
+  font-size: 64px;
+  line-height: 64px;
+  margin: 40px 0 0;
+}
+h2{
+  font-size: 32px;
+  line-height: 32px;
+  margin: 10px 0 0;
+}
+h1.secondary{
+  color: #F4CE14;
+}
+h2.secondary, p.secondary {
+  color: white;
+}
+.hero-container{
+  background-color: #495E57;
+  padding-bottom:40px;
+}
+.date-cell{
+  height: 80px;
+  width: 80px;
+  margin: 0 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Karla';
+}
+.day-of-month{
+  font-size: 32px;
+}
+.reservation h2, footer h2 {
+  font-size: 1.3em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-family: 'karla';
+  font-weight: 900;
+}
+
+.time-cell{
+  font-size: 28px;
+  height: 80px;
+  width: 80px;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Karla';
+}
+.day-of-week{
+  font-size: 16px;
+}
+#cards, .reservation, .footer-container{
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%/1, max(250px, 100%/3)), 1fr));
+
+ 
+  /**
+   * User input values.
+   */
+   --grid-layout-gap: 40px;
+   --grid-column-count: 3;
+   --grid-item--min-width: 266px;
+ 
+   /**
+    * Calculated values.
+    */
+   --gap-count: calc(var(--grid-column-count) - 1);
+   --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
+   --grid-item--max-width: calc((100% - var(--total-gap-width)) / var(--grid-column-count));
+ 
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
+   grid-column-gap: var(--grid-layout-gap);
+   padding: 40px 0; 
+}
+.footer-container{
+  --grid-layout-gap: 40px;
+  --grid-column-count: 4;
+  --grid-item--min-width: 195px;
+}
+.footer-container>div {
+  margin: 0 10px;
+}
+.card, .reservation>div{
+  /* width: 250px; */
+  max-width: 100%;
+  border-radius: 15px 15px 0 0;
+
+}
+.reservation {
+  margin: 0px 10px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+.testimonials {
+  /**
+   * User input values.
+   */
+   --grid-layout-gap: 40px;
+   --grid-column-count: 4;
+   --grid-item--min-width: 195px;
+   /**
+    * Calculated values.
+    */
+   --gap-count: calc(var(--grid-column-count) - 1);
+   --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
+   --grid-item--max-width: calc((100% - var(--total-gap-width)) / var(--grid-column-count));
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
+   grid-column-gap: var(--grid-layout-gap);
+   padding: 40px 0; 
+
+}
+.testimonials-container{
+  background: #EDEFEE;
+}
+.testimonials .item{
+  max-width: 100%;
+  border-radius: 15px 15px 0 0;
+  padding: 0 10px;
+}
+.testimonials-title{
+  width: 100%;
+  text-align: center;
+  font-family: 'markazi text';
+  font-size: 40px;
+  padding: 90px 0 0;
+}
+.review-text, .user-pic{
+  font-size: 16px;
+  font-family: 'Karla';
+}
+.user-pic{
+  font-weight: bold;
+}
+.card img{
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.card {
+  background-color: #EDEFEE;
+}
+.card-title {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'markazi text';
+  font-size: 20px;
+  font-weight: bold;
+}
+.card-text {
+  font-family: Karla;
+  padding: 20px 20px;
+}
+.card-title div:nth-child(2){
+  font-family: Karla;
+  font-size: 16px;
+  color: #EE9972;
+}
+.card-footer{
+  font-weight: bold;
+  padding: 20px 20px;
+}
+img{max-width: 100%;}
+.user-pic{
+  display: flex;
+  align-items: center;
+}
+.rating{
+  margin: 10px;
+}
+@media(max-width: 1073px) {
+  .container {
+    width: 900x;
+  }
+}
+@media(max-width: 815px) {
+  .container {
+    width: 700x;
+  }
+}
+@media(max-width: 555px) {
+  .container {
+    width: calc(100vw - 10px);
+  }
+  button.call{
+    width:100%;
+    border-radius: 0;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {

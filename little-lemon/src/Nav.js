@@ -1,24 +1,25 @@
+import React from 'react'
+import { Routes } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import BookingPage from './BookingPage';
+import Home from './Home';
+import { Link, Outlet  } from 'react-router-dom';
+
 function Nav(){
     return(
-        <nav>
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/menu">Menu</a>
-                </li>
-                <li>
-                    <a href="/reservation">Reservation</a>
-                </li>
-                <li>
-                    <a href="/order-online">Order Online</a>
-                </li>
-                <li>
-                    <a href="/login">Login</a>
-                </li>
-            </ul>
-        </nav>
+        <>
+            <nav>
+                <ul>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/reservation">Reservation</Link>
+                    </li>
+                </ul>
+            </nav>
+            <Outlet />
+        </>
     )
 }
 export default Nav;
