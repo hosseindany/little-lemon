@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --silent=false --setupFiles ./public/api.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

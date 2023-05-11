@@ -3,8 +3,8 @@ import logo from  './assets/Logo.svg'
 function Footer(){
     return(
         <footer>
-            <div class="container">
-            <div class="footer-container">
+            <div className="container">
+            <div className="footer-container">
             <div>
             <h2>
             </h2>

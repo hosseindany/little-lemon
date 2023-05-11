@@ -5,25 +5,27 @@ import Heroimage from './assets/restauranfood.jpg';
 import Specials from './Specials';
 import Testimonials from './Testimonials';
 import Chicago from './Chicago';
+import { useState } from 'react';
 function Main(){
+
     return(
         <main>
-            <div class="hero-container">
+            <div className="hero-container">
                 <div className="container">
                     <Hero image={Heroimage} h1="Little Lemon" h2="Chicago" text="We are a family owned mediterranean restaurant focused on traditional recipes served with a modern twist." button="Reserve a table"></Hero>
                 </div>
             </div>
-            <div class="cards-container">
+            <div className="cards-container">
                 <div className="container">
                     <Specials></Specials>
                 </div>
             </div>
-            <div class="testimonials-container">
+            <div className="testimonials-container">
                 <div className="container">
                     <Testimonials></Testimonials>
                 </div>
             </div>
-            <div class="chicago-container">
+            <div className="chicago-container">
                 <div className="container">
                     <Chicago></Chicago>
                 </div>

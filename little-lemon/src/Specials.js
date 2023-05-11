@@ -7,7 +7,7 @@ function Specials(){
     return(
         <>
         <div>
-            <h1>This week's specials! <button class="primary" style={{ "float": "right", "margin-top": "10px" }}>Reserve a table</button></h1>
+            <h1>This week's specials! <button className="primary" style={{ "float": "right", "marginTop": "10px" }}>Reserve a table</button></h1>
         </div>
         <div style={{ "clear": "both" }}></div>
         <div id="cards">

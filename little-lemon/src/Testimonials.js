@@ -3,7 +3,7 @@ import TestimonialsItem from "./TestimonialsItem";
 function Testimonials(props){
     return(
         <>
-            <div class="testimonials-title">Testimonials</div><div className="testimonials">
+            <div className="testimonials-title">Testimonials</div><div className="testimonials">
 
                 <TestimonialsItem stars={4} name="John Ramsey" text="I just wanted to let you know that I had one of the best dinners of my life last night…. at your restaurant!! It was a last minute thing and I love Chicken Cordon Bleu."></TestimonialsItem>
                 <TestimonialsItem stars={5} name="James Nick" text="It’s a great experience. The ambiance is very welcoming and charming. Amazing wines, food and service. Staff are extremely knowledgeable and make great recommendations."></TestimonialsItem>
